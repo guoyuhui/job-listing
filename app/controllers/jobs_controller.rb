@@ -13,13 +13,15 @@ class JobsController < ApplicationController
               end
     end
 
+    def show
+      @job = Job.find(params[:id])
+    end
+
   def new
     @job = Job.new
   end
 
-  def show
-    @job = Job.find(params[:id])
-  end
+
 
   def create
     @job = Job.new(job_params)
