@@ -1,4 +1,11 @@
-<table class="table table-boldered">
+<div class="pull-right">
+  <%= link_to(" Add a job", new_admin_job_path, :class => "btn btn-default" ) %>
+</div>
+
+<br><br>
+
+
+ <table class="table table-boldered table-striped custab" >
     <thead>
         <tr>
             <td>
@@ -35,16 +42,16 @@
         <td> <%= job.wage_lower_bound %> </td>
         <td> <%= job.wage_upper_bound %> </td>
         <td>
-            <%= link_to("Edit", edit_admin_job_path(job)) %>
-            |
-            <%= link_to("Destroy", admin_job_path(job), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
-
-            |
+            <%= link_to("Edit", edit_admin_job_path(job), :class => "btn btnxs btninfo") %>
+            <%= link_to edit_admin_job_path(job), class: "btn btnxs btninfo" do %><i class="fa fapencil"></i><% end %>
+            <%= link_to("Destroy", admin_job_path(job), :method => :delete, :class => "btn btnxs  btndanger", :data => { :confirm => "Are you sure?" }) %>
+            <%= link_to admin_job_path(job), :method => :delete, :class => "btn btnxs  btndanger", :data => { :confirm => "Are you sure?" } do %><i class="fa fatrasho"></i><% end %>
             <% if job.is_hidden %>
-
-            <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-default") %>
-        <% else %>
-            <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-default") %>
+             <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btnxs btnsuccess") %>
+            <%= link_to publish_admin_job_path(job) , :method => :post, :class => "btn btnxs btnsuccess" do %><i class="fa faeye"></i><% end %>
+            <% else %>
+              <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btnxs btnwarning") %>
+            <%= link_to hide_admin_job_path(job), :method => :post,  :class => "btn btnxs btnwarning" do %><i class="fa faeyeslash"></i><% end %>
             <% end %>
         </td>
         <td>
