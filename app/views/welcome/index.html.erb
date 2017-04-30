@@ -1,1 +1,145 @@
-<p>welcome to thailand</p>
+<div class="slider_margin">
+<!-- Add this css File in head tag-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+
+
+ <!--
+        If you want to change #bootstrap-touch-slider id then you have to change Carousel-indicators and Carousel-Control  #bootstrap-touch-slider slide as well
+        Slide effect: slide, fade
+        Text Align: slide_style_center, slide_style_left, slide_style_right
+        Add Text Animation: https://daneden.github.io/animate.css/
+        -->
+
+
+        <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Third Slide -->
+                <div class="item active">
+
+                    <!-- Slide Background -->
+                    <!-- <img src="https://images.pexels.com/photos/48726/pexels-photo-48726.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/> -->
+                    <img src="https://ooo.0o0.ooo/2017/04/30/59057d298935e.jpg" alt="learning.jpg" title="learning.jpg" />
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_left">
+                                <h1 data-animation="animated zoomInRight">出国工作，你只差一份简历！</h1>
+                                <p data-animation="animated fadeInLeft">免费旅游，感受世界不同国家的人文和风景.</p>
+                                <div target="_blank" class="btn btn-default" data-animation="animated fadeInLeft"><%= link_to("点击连接世界", jobs_path)%></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Second Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="https://ooo.0o0.ooo/2017/04/30/59057e0d4b054.jpg" alt="chinese-teach-write-learn.jpg" title="chinese-teach-write-learn.jpg" />
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">丰厚的工作回报</h1>
+                        <p data-animation="animated lightSpeedIn">报酬以美元计算，工作机会遍布欧美，给你一个完美的英语交流环境.</p>
+                        <div target="_blank" class="btn btn-default" data-animation="animated fadeInLeft"><%= link_to("点击连接世界", jobs_path)%></div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <!-- <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a> -->
+
+            <!-- Right Control -->
+            <!-- <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+
+      </div> <!-- End  bootstrap-touch-slider Slider -->
+</div>
+
+
+  <!-- 我们做什么 -->
+    <h1 class="dream">年轻的心，行走的梦</h1>
+
+  <div class="titlee">
+
+  <div class="hr-index hr-index-position">
+
+      <ul class="clearfix position-info">
+        <div class="col-md-4">
+          <li>
+            <div class="fitimage">
+            <img src="https://ooo.0o0.ooo/2017/04/30/5905aadd66991.png" alt="Screen Shot 2017-04-30 at 5.11.35 PM.png" title="Screen Shot 2017-04-30 at 5.11.35 PM.png" />
+            </div>
+              <div class="hr-index-position-item position-item1">
+                  <div class="detail">
+                      <span>最激动人心的事，是旅游世界的梦想终于实现！</span>
+                      <br />——行走世界的猫</span>
+                  </div>
+                  <h3 class="button">More</h3>
+
+              </div>
+            </div>
+          </li>
+          <div class="col-md-4">
+          <li>
+            <div class="fitimage">
+              <img src="https://ooo.0o0.ooo/2017/04/30/5905b640cc304.png" alt="Screen Shot 2017-04-30 at 6.01.39 PM.png" title="Screen Shot 2017-04-30 at 6.01.39 PM.png" />
+            </div>
+              <div>
+                  <div class="detail">
+                      <span>这份工作让我收获的不止是金钱，更是国际化的成长环境！</span>
+                      <br />——Helen Li</span>
+                  </div>
+                  <h3 class="button">More</h3>
+
+              </div>
+            </div>
+          </li>
+          <div class="col-md-4">
+          <li>
+            <div class="fitimage">
+              <img src="https://ooo.0o0.ooo/2017/04/30/5905ae26c6631.png" alt="Screen Shot 2017-04-30 at 5.26.57 PM.png" title="Screen Shot 2017-04-30 at 5.26.57 PM.png" />
+            </div>
+              <div class="hr-index-position-item position-item3">
+                  <div class="detail">
+                      <span>在教室里，在田野间，哪里都可以是我传播汉语文化的舞台！</span>
+                      <br />——刘轩轩</span>
+                  </div>
+                  <h3 class="button">More</h3>
+                </div>
+
+              </div>
+          </li>
+
+
+      </ul>
+
+
+  <!-- <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">浏览更多职位</a></p> -->
+  </section>
+  </div>
+  </div>
+
+<!-- 冰山背景 分区 -->
+    <!-- <section  class="background">
+        <h1 class="main-heading"></h1>
+    </section> -->
